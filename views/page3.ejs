@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome page3 ejs</title>
+  </head>
+  <body>
+    <h1>Welcome to my first app of nodejs-Page3!</h1>
+    <p>登录名 is ：<%= name %> </p>
+    <p>  密码 is ：<%= password %> </p>
+    <br/>
+    <br/>
+    <form action="/page1" method="post">
+      <input type="hidden" name="name" value=<%= name %> > </input>
+      <input type="hidden" name="password" value=<%= password %> > </input>
+      <button type="submit" id="btnGoPage1" >Go Page1</button>
+    </form>
+    <form action="/" method="post">
+      <button type="submit" id="btnGoIndex" >Back Index</button>
+    </form>
+  </body>
+</html>

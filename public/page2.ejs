@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<h1>Welcome to page2</h1>
+</head>
+<body>
+<form action="/page1" method="post">
+    Username: <%=name%>
+    <input type="hidden" name="username" value="<%=name%>"> </input>
+    <br/ >
+    <br/ >
+    Password:<%=password%>
+    <input type="hidden" name="password" value="<%=password%>"> </input>
+    <br/ >
+    <br/ >
+    <button type="submit" id="btnGoPage1">Go to page1</button>
+</form>
+    <br/ >
+<button type="submit"  id="btnGoIndex" onclick="GoIndex();">Back to index</button>
+</body>
+</html>
+<script type="text/javascript">
+    function GoIndex(){
+        location.href = '/';
+    }
+  </script>

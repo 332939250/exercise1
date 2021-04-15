@@ -1,0 +1,20 @@
+{
+    "name": "workplace",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "dependencies": {
+        "cfenv": "^1.2.2",
+        "ejs": "^2.7.1",
+        "koa": "^2.0.0",
+        "koa-bodyparser": "3.2.0",
+        "koa-router": "7.0.0",
+        "koa-view": "2.1.3",
+        "koa-views": "^6.2.1",
+        "koa2": "2.0.0-alpha.7"
+    },
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "song"
+}

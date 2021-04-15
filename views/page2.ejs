@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome page2 ejs</title>
+  </head>
+  <body>
+    <h1>Welcome to my first app of nodejs-Page2!</h1>
+    <form action="/page1" method="post">
+      <!-- disabled="disabled"　传值传不过 -->
+      <p>登录名：<input type="text" name="name" readonly="readonly" value="<%= name %>" /></p>　
+      <p>  密码：<input type="text" name="password"  readonly="readonly" value="<%= password %>" /></p>
+      <br/>
+      <button type="submit" id="btnGoPage1" >Go Page1</button>
+    </form>
+    <br/>
+    <form action="/" method="post">
+      <button type="submit" id="btnGoIndex" >Back Index</button>
+    </form>
+  </body>
+</html>

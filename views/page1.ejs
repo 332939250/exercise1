@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script>
+        function gopage2(){
+          gopage23.action="/page2";
+          gopage23.submit();
+        }
+        function gopage3(){
+            gopage23.action = "/page3";
+            gopage23.submit();
+        }
+    </script>
+
+    <title>Welcome page1 ejs</title>
+  </head>
+  <body>
+    <h1>Welcome to my first app of nodejs-Page1!</h1>
+    <form name="gopage23" method="post">
+      <p>登录名：<input type="text" name="name" value=<%= name %> > </input></p>
+      <p>  密码：<input type="password" name="password" value=<%= password %> > </input></p>
+      <br/>
+      <input type="button" id="btnGoPage2" onclick="gopage2()" value="Go Page2"/> 
+      <input type="button" id="btnGoPage3" onclick="gopage3()" value="Go Page3"/>
+    </form>
+    <br/>
+    <!-- 方式二　action　button type="submit"　　 -->
+    <form action="/" method="post">
+      <button type="submit" id="btnGoIndex" >Back Index</button>
+    </form>
+    <br/>
+    <h1>  <%= msg %> </h1>
+  </body>
+</html>
